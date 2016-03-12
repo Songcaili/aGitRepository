@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  pullToRefresh
+//
+//  Created by  songcaili on 16/3/9.
+//  Copyright © 2016年  songcaili. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define KSCREEN_WIDTH ([UIScreen mainScreen].applicationFrame.size.width)
+#define KSCREEN_HEIGHT ([UIScreen mainScreen].applicationFrame.size.height)
+
+#endif /* PrefixHeader_pch */

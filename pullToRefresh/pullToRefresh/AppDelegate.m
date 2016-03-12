@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+   
+    TableViewController *vc = [[TableViewController alloc] init];
+    vc.edgesForExtendedLayout = UIRectEdgeNone;
+    UINavigationController *nvc = [[UINavigationController alloc] init];
+    [nvc pushViewController:vc animated:NO];
+    
+    self.window.rootViewController = nvc;
+    
     return YES;
 }
 

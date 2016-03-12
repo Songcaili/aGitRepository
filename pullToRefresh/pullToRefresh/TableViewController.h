@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  pullToRefresh
 //
 //  Created by  songcaili on 16/3/9.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController
 
 @end
-
